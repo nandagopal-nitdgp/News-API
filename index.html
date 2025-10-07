@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="navbar-container">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <h2>NEWS APP</h2>
+            <div class="nav-links">
+              <a class="home" onclick="reload()">Home</a>
+              <a class="navItems" id="nav1" onclick="onNavItemClick('Politics')">Politics</a>
+              <a class="navItems" id="nav2"  onclick="onNavItemClick('Entertainment')">Entertainment</a>
+              <a class="navItems" id="nav3"  onclick="onNavItemClick('Sports')">Sports</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search" class="search-text">
+                <button id="search-button" class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<main>
+    <div class="big-container">
+        
+    </div>
+</main>
+
+<template id="temp-news">
+    <div class="news-container">
+        <div class="photo-container">
+            <img src=""   alt="">
+        </div>
+        <div class="news-content-container">
+            <h4 id="title">News heading</h4>
+            <h6 id="time">time place</h6>
+            <p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque similique expedita dolores atque, ipsum pariatur non repellendus? Laudantium necessitatibus corporis dolore exercitationem pariatur ullam rem a reprehenderit enim tempore?</p>
+        </div>
+     </div>
+ </template>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script src="news.js"></script>
+</body>
+</html>
